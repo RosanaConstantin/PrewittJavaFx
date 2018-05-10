@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="62ad208b-d9ed-4573-9c7d-decf145ce6f3" name="Default" comment="">
+    <list default="true" id="62ad208b-d9ed-4573-9c7d-decf145ce6f3" name="Default" comment="added helpPage without styles">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../prewittGUI/out/production/prewittGUI/Main.class" afterPath="$PROJECT_DIR$/../prewittGUI/out/production/prewittGUI/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../prewittGUI/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../prewittGUI/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../prewittGUI/src/Main.java" afterPath="$PROJECT_DIR$/../prewittGUI/src/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/../prewittGUI/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -458,7 +458,14 @@
       <option name="project" value="LOCAL" />
       <updated>1525995411671</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added helpPage without styles">
+      <created>1525995987415</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1525995987415</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -499,7 +506,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added homePage without styles&#10;added prewitt operator functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="added homePage without styles&#10;added prewitt operator functions" />
+    <MESSAGE value="added helpPage without styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="added helpPage without styles" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
