@@ -66,7 +66,33 @@ public class Main extends Application {
         label.setText("Vezi mai multe:");
 
         homePane.getChildren().addAll(textArea, hyperlink, imageView, label);
-        root.getChildren().addAll(menu, sc);
+
+        Pane helpPane = new Pane();
+        helpPane.setId("helpPane");
+        helpPane.setPrefSize(1100, 600);
+        TextArea textAreaHelp = new TextArea();
+        textAreaHelp.setEditable(false);
+        textAreaHelp.setText("\n"
+                +"Prewitt Editor v7.1.0 \n \n"+
+        "Autor: Rosana Constantin\n"+
+        "Proiect:  https://github.com/RosanaConstantin/imageProcessing\n\n\n"+
+        "Acest program este software liber; îl puteți redistribui și / sau modifica în conformitate cu termenii Licenței Publice Generale GNU, publicată de Fundația pentru Software Liber; fie versiunea 2 a Licenței, fie (la alegere) orice versiune ulterioară.\n"+
+        "Acest program este distribuit în speranța că va fi util, dar FĂRĂ NICI O GARANȚIE; fără nici măcar garanția implicită de VANDABILITATE sau de UTILIZAREA PENTRU UN SCOP SPECIC. Pentru mai multe detalii, consultați Licența publică generală GNU.\n\n");
+        ImageView imageViewHelp = new ImageView("./utils/images/matrix.png");
+        imageViewHelp.setId("helpIcon");
+        imageViewHelp.setFitHeight(150);
+        imageViewHelp.setFitWidth(200);
+
+        helpPane.getChildren().addAll(textAreaHelp, imageViewHelp);
+
+        Hyperlink hyperlinkGit = new Hyperlink();
+        hyperlinkGit.setText("https://github.com/RosanaConstantin/imageProcessing");
+
+        Label labelGit =  new Label();
+        labelGit.setId("textGit");
+        labelGit.setText("Gaseste proiectul pe Git, la adresa:");
+
+        root.getChildren().addAll(menu, sc, labelGit, hyperlinkGit);
         Scene scene = new Scene(root,1200, 740);
         primaryStage.setTitle("Procesare imagine");
         primaryStage.setScene(scene);

@@ -2,19 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62ad208b-d9ed-4573-9c7d-decf145ce6f3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../prewittGUI/src/img/27798223_1690586224296957_4839742899889288026_o.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../prewittGUI/src/img/30703887_1692818390768027_7430299770041663488_n.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../prewittGUI/src/img/EdgeDetector.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../prewittGUI/src/img/landscape-nature-background-image-1536x864.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../prewittGUI/src/utils/images/matrix.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../prewittGUI/src/utils/images/seeMore.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../prewittGUI/src/utils/Luminance.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../prewittGUI/src/utils/PrewittHV.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../prewittGUI/src/utils/PrewittHorizontal.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../prewittGUI/src/utils/PrewittVertical.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../prewittGUI/src/utils/matrix.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../prewittGUI/src/utils/pixel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../prewittGUI/out/production/prewittGUI/Main.class" afterPath="$PROJECT_DIR$/../prewittGUI/out/production/prewittGUI/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../prewittGUI/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../prewittGUI/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../prewittGUI/src/Main.java" afterPath="$PROJECT_DIR$/../prewittGUI/src/Main.java" />
     </list>
@@ -32,8 +19,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../prewittGUI/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="618">
-              <caret line="69" column="37" lean-forward="false" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
+            <state relative-caret-position="1741">
+              <caret line="85" column="55" lean-forward="true" selection-start-line="85" selection-start-column="55" selection-end-line="85" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#361#362#0" expanded="true" />
@@ -112,6 +99,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prewittGUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prewittGUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prewittGUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prewittGUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -424,6 +451,14 @@
       <option name="presentableId" value="Default" />
       <updated>1525988689282</updated>
     </task>
+    <task id="LOCAL-00001" summary="added homePage without styles&#10;added prewitt operator functions">
+      <created>1525995411671</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1525995411671</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -462,8 +497,14 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added homePage without styles&#10;added prewitt operator functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="added homePage without styles&#10;added prewitt operator functions" />
+  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -473,8 +514,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../prewittGUI/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="69" column="37" lean-forward="false" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
+        <state relative-caret-position="1741">
+          <caret line="85" column="55" lean-forward="true" selection-start-line="85" selection-start-column="55" selection-end-line="85" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#361#362#0" expanded="true" />
