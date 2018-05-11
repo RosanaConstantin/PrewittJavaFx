@@ -211,10 +211,26 @@ public class Main extends Application {
         Label labelImgOrg = new Label();
         labelImgOrg.setText("Imaginea procesata");
 
+        //Toggle button
+        ToggleButton toggleButton = new ToggleButton();
+        toggleButton.setText("Afisare imaginea procesata");
 
-        parentPane.getChildren().addAll(menu, sc, labelGit, hyperlinkGit, cb, dateHolder, loadButton, processButton, typeLabel, checkInfo, img, imgOrg, progressInd, textInfo, labelImg, labelImgOrg);
+        //Tabel
+        TableView table = new TableView();
+        table.setEditable(false);
+        TableColumn width = new TableColumn("Latime");
+        TableColumn height = new TableColumn("Inaltime");
+        TableColumn size = new TableColumn("Latime");
+        table.getColumns().addAll(width, height, size);
+
+        TableView tableModif = new TableView();
+        TableColumn widthModif = new TableColumn("Latime");
+        TableColumn heightModif = new TableColumn("Inaltime");
+        TableColumn sizeModif = new TableColumn("Latime");
+        tableModif.getColumns().addAll(widthModif, heightModif, sizeModif);
 
 
+        parentPane.getChildren().addAll(menu, sc, table, tableModif, labelGit, hyperlinkGit, cb, dateHolder, toggleButton, loadButton, processButton, typeLabel, checkInfo, img, imgOrg, progressInd, textInfo, labelImg, labelImgOrg);
         //Creare scena
 
         Scene scene = new Scene(parentPane,1200, 740);
