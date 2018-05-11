@@ -1,10 +1,20 @@
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.geometry.Pos;
 import javafx.geometry.Side;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
+import javafx.scene.web.WebEngine;
+import javafx.scene.web.WebView;
 import javafx.stage.Stage;
+
+import java.awt.*;
+import java.net.URI;
 
 /**
  * Created by Rosana-Constantin on 11-May-18.
@@ -15,13 +25,29 @@ public class Main extends Application {
         launch(args);
     }
 
+    public void openWebpage(String urlString) throws Exception {
+        Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
+        URI url = new URI(urlString);
+        if (desktop != null && desktop.isSupported(Desktop.Action.BROWSE)) {
+            try {
+                desktop.browse(url);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
     @Override
     public void start(Stage primaryStage) throws Exception{
+//        final WebView browser = new WebView();
+//        final WebEngine webEngine = browser.getEngine();
+
         Pane root = new Pane();
         root.setId("parentPane");
         root.setPrefSize(1200, 740.0);
 
         TabPane menu = new TabPane();
+
         menu.setTabMaxWidth(100.0);
         menu.setTabMinWidth(100.0);
         menu.setTabClosingPolicy(TabPane.TabClosingPolicy.UNAVAILABLE);
@@ -53,7 +79,6 @@ public class Main extends Application {
                 "\n" +
                 " În practică, calculul amplitudinii (probabilitatea unei margini) este mai fiabil și mai ușor de interpretat decât calculul direcției. În mod punctual, gradientul unei funcții cu două variabile (aici funcția de intensitate a imaginii) este la fiecare punct de imagine un vector 2D cu componentele date de derivați în direcțiile orizontale și verticale. La fiecare punct de imagine, vectorul de gradient indică în direcția celei mai mari creșteri a intensității posibile, iar lungimea vectorului de gradient corespunde ratei de schimbare în direcția respectivă. Aceasta implică faptul că rezultatul operatorului Prewitt la un punct de imagine care se află într-o regiune cu intensitate constantă a imaginii este un vector zero și la un punct pe o margine este un vector care indică peste margine, de la valori mai întunecate la cele mai strălucitoare.");
 
-
         ImageView imageView = new ImageView("./utils/images/seeMore.png");
         imageView.setId("homeIcon");
         imageView.setFitHeight(105);
@@ -61,6 +86,14 @@ public class Main extends Application {
 
         Hyperlink hyperlink = new Hyperlink();
         hyperlink.setText("https://en.wikipedia.org/wiki/Prewitt_operator");
+        hyperlink.setAlignment(Pos.CENTER);
+        hyperlink.setOnAction(e -> {
+            try {
+                openWebpage( "https://en.wikipedia.org/wiki/Prewitt_operator");
+            } catch (Exception e1) {
+                e1.printStackTrace();
+            }
+        });
 
         Label label =  new Label();
         label.setText("Vezi mai multe:");
@@ -87,6 +120,14 @@ public class Main extends Application {
 
         Hyperlink hyperlinkGit = new Hyperlink();
         hyperlinkGit.setText("https://github.com/RosanaConstantin/imageProcessing");
+        hyperlinkGit.setAlignment(Pos.CENTER);
+        hyperlinkGit.setOnAction(e -> {
+            try {
+                openWebpage( "https://github.com/RosanaConstantin/imageProcessing");
+            } catch (Exception e1) {
+                e1.printStackTrace();
+            }
+        });
 
         Label labelGit =  new Label();
         labelGit.setId("textGit");
@@ -98,4 +139,6 @@ public class Main extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
     }
+
+
 }
