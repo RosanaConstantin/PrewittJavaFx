@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62ad208b-d9ed-4573-9c7d-decf145ce6f3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Initialize.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HelpPage/help.java" afterPath="$PROJECT_DIR$/src/HelpPage/help.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HomePage/home.java" afterPath="$PROJECT_DIR$/src/HomePage/home.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Initialize.java" afterPath="$PROJECT_DIR$/src/Initialize.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ProcessPage/process.java" afterPath="$PROJECT_DIR$/src/ProcessPage/process.java" />
     </list>
     <ignored path="$PROJECT_DIR$/../prewittGUI/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,25 +16,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2865">
-              <caret line="191" column="0" lean-forward="false" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
+            <state relative-caret-position="402">
+              <caret line="214" column="196" lean-forward="false" selection-start-line="214" selection-start-column="196" selection-end-line="214" selection-end-column="196" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#715#716#0" expanded="true" />
-                <element signature="e#743#744#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Initialize.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Initialize.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Initialize.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="42" lean-forward="false" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="163" />
+            <state relative-caret-position="240">
+              <caret line="16" column="132" lean-forward="false" selection-start-line="16" selection-start-column="132" selection-end-line="16" selection-end-column="132" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,9 +125,9 @@
         <option value="$PROJECT_DIR$/../prewittGUI/src/Main.java" />
         <option value="$PROJECT_DIR$/src/HomePage/home.java" />
         <option value="$PROJECT_DIR$/src/HelpPage/help.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/ProcessPage/process.java" />
         <option value="$PROJECT_DIR$/src/Initialize.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -459,7 +454,14 @@
       <option name="project" value="LOCAL" />
       <updated>1526039141128</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added elements">
+      <created>1526051877153</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1526051877154</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -505,14 +507,15 @@
     <MESSAGE value="added homePage without styles&#10;added prewitt operator functions" />
     <MESSAGE value="added helpPage without styles" />
     <MESSAGE value="added hyperlink - open browser page" />
-    <option name="LAST_COMMIT_MESSAGE" value="added hyperlink - open browser page" />
+    <MESSAGE value="added elements" />
+    <option name="LAST_COMMIT_MESSAGE" value="added elements" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>38</line>
+          <line>39</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -538,8 +541,6 @@
           <caret line="191" column="0" lean-forward="false" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#715#716#0" expanded="true" />
-            <element signature="e#743#744#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -596,8 +597,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#715#716#0" expanded="true" />
-            <element signature="e#743#744#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -636,18 +635,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2865">
-          <caret line="191" column="0" lean-forward="false" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#715#716#0" expanded="true" />
-            <element signature="e#743#744#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/images/matrix.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -660,8 +647,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Initialize.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="42" lean-forward="false" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="163" />
+        <state relative-caret-position="240">
+          <caret line="16" column="132" lean-forward="false" selection-start-line="16" selection-start-column="132" selection-end-line="16" selection-end-column="132" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="214" column="196" lean-forward="false" selection-start-line="214" selection-start-column="196" selection-end-line="214" selection-end-column="196" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

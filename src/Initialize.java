@@ -13,8 +13,8 @@ public class Initialize {
         dateHolder.setValue(LocalDate.now());
         homePane.setVisible(true);
         try {
-            helpIcon.setImage(new Image( new FileInputStream(System.getProperty("user.dir") + "/PrewittJava/src/utils/images/matrix.png./utils/images/matrix.png")));
-            homeIcon.setImage(new Image( new FileInputStream(System.getProperty("user.dir") + "/PrewittJava/src/utils/images/matrix.png")));
+            helpIcon.setImage(new Image( new FileInputStream(System.getProperty("user.dir") + "/PrewittJava/src/utils/images/matrix.png")));
+            homeIcon.setImage(new Image( new FileInputStream(System.getProperty("user.dir") + "/PrewittJava/src/utils/images/seeMore.png")));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

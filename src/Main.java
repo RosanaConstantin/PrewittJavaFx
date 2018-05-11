@@ -9,6 +9,7 @@ import javafx.scene.control.*;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.web.WebEngine;
@@ -180,8 +181,38 @@ public class Main extends Application {
         //helpIcon
         ImageView helpIcon = new ImageView();
 
+        //Label
+        Label typeLabel = new Label();
+        typeLabel.setText("Alege tipul de transformare:");
 
-        parentPane.getChildren().addAll(menu, sc, labelGit, hyperlinkGit, cb, dateHolder);
+        //CheckBox
+
+        CheckBox checkInfo = new CheckBox();
+        checkInfo.setText("      Afiseaza informatiile despre imagine" );
+
+        //img
+        ImageView img = new ImageView();
+
+        //imgOrg
+        ImageView imgOrg = new ImageView();
+
+        //Progress Indicator
+        ProgressIndicator progressInd = new ProgressIndicator();
+
+        //textField
+        TextField textInfo = new TextField();
+        textInfo.setText("Informatii imagine");
+
+        //Label img
+        Label labelImg = new Label();
+        labelImg.setText("Imaginea originala");
+
+        //Label imgOrg
+        Label labelImgOrg = new Label();
+        labelImgOrg.setText("Imaginea procesata");
+
+
+        parentPane.getChildren().addAll(menu, sc, labelGit, hyperlinkGit, cb, dateHolder, loadButton, processButton, typeLabel, checkInfo, img, imgOrg, progressInd, textInfo, labelImg, labelImgOrg);
 
 
         //Creare scena
