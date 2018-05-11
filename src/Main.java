@@ -1,10 +1,12 @@
 import javafx.application.Application;
+import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Pos;
 import javafx.geometry.Side;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.image.ImageView;
@@ -39,12 +41,9 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-//        final WebView browser = new WebView();
-//        final WebEngine webEngine = browser.getEngine();
 
-        Pane root = new Pane();
-        root.setId("parentPane");
-        root.setPrefSize(1200, 740.0);
+        Pane parentPane = new Pane();
+        parentPane.setPrefSize(1200, 740.0);
 
         TabPane menu = new TabPane();
 
@@ -53,12 +52,13 @@ public class Main extends Application {
         menu.setTabClosingPolicy(TabPane.TabClosingPolicy.UNAVAILABLE);
         menu.setId("menuBar");
         menu.setSide(Side.TOP);
+
         final Tab home = new Tab("Acasa");
-        home.setId("homeItem");
         final Tab processing = new Tab("Procesare");
         processing.setId("processItem");
         final Tab help = new Tab("Ajutor");
         help.setId("helpItem");
+
         menu.getTabs().addAll(home, processing, help);
 
         ScrollBar sc = new ScrollBar();
@@ -123,7 +123,7 @@ public class Main extends Application {
         hyperlinkGit.setAlignment(Pos.CENTER);
         hyperlinkGit.setOnAction(e -> {
             try {
-                openWebpage( "https://github.com/RosanaConstantin/imageProcessing");
+                openWebpage( "https://github.com/RosanaConstantin/PrewittJavaFx.git");
             } catch (Exception e1) {
                 e1.printStackTrace();
             }
@@ -133,10 +133,63 @@ public class Main extends Application {
         labelGit.setId("textGit");
         labelGit.setText("Gaseste proiectul pe Git, la adresa:");
 
-        root.getChildren().addAll(menu, sc, labelGit, hyperlinkGit);
-        Scene scene = new Scene(root,1200, 740);
+
+        //Tab menu actions
+
+        home.selectedProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue) {
+                HomePage.home.homeInitialize(homePane, helpPane);
+            }
+        });
+
+        help.selectedProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue) {
+                HelpPage.help.helpInitialize(helpPane, homePane);
+            }
+        });
+
+        processing.selectedProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue) {
+                ProcessPage.process.processInitialize(parentPane, homePane, helpPane);
+            }
+        });
+
+
+        //ChoiceBox
+        ChoiceBox cb = new ChoiceBox(FXCollections.observableArrayList(
+                "Vertical", "Horizontal", "Vert&Horiz")
+        );
+        cb.setTooltip(new Tooltip("Selecteaza orientarea de procesare"));
+
+
+        //Button load
+        Button loadButton = new Button();
+        loadButton.setText("Incarca imaginea");
+
+        //Button process
+        Button processButton = new Button();
+        processButton.setText("Proceseaza imaginea");
+
+        //DatePicker
+        DatePicker dateHolder = new DatePicker();
+        dateHolder.setEditable(false);
+
+        //homeIcon
+        ImageView homeIcon = new ImageView();
+
+        //helpIcon
+        ImageView helpIcon = new ImageView();
+
+
+        parentPane.getChildren().addAll(menu, sc, labelGit, hyperlinkGit, cb, dateHolder);
+
+
+        //Creare scena
+
+        Scene scene = new Scene(parentPane,1200, 740);
         primaryStage.setTitle("Procesare imagine");
         primaryStage.setScene(scene);
+        Initialize.initialize(dateHolder, homePane, helpPane, homeIcon, helpIcon);
         primaryStage.show();
     }
 
