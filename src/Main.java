@@ -166,6 +166,13 @@ public class Main extends Application {
         //Button load
         Button loadButton = new Button();
         loadButton.setText("Incarca imaginea");
+         loadButton.setOnAction(e -> {
+             try {
+                // ProcessPage.
+             } catch (Exception e1) {
+                 e1.printStackTrace();
+             }
+         });
 
         //Button process
         Button processButton = new Button();
