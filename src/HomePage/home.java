@@ -8,5 +8,6 @@ public class home {
         homePane.setVisible(true);
         homePane.toFront();
         helpPane.setVisible(false);
+        return;
     }
 }

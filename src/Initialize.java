@@ -12,11 +12,13 @@ public class Initialize {
     public static void initialize(DatePicker dateHolder, Pane homePane, Pane helpPane, ImageView homeIcon, ImageView helpIcon){
         dateHolder.setValue(LocalDate.now());
         homePane.setVisible(true);
+        homePane.toFront();
         try {
-             helpIcon.setImage(new Image( new FileInputStream(System.getProperty("user.dir") + "/src/utils/images/matrix.png")));
+            helpIcon.setImage(new Image( new FileInputStream(System.getProperty("user.dir") + "/src/utils/images/matrix.png")));
             homeIcon.setImage(new Image( new FileInputStream(System.getProperty("user.dir") + "/src/utils/images/seeMore.png")));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+        return;
     }
 }

@@ -6,6 +6,9 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -18,9 +21,6 @@ import utils.PrewittVertical;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
-import java.awt.Button;
-import java.awt.Label;
-import java.awt.TextField;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
@@ -28,6 +28,8 @@ import java.io.IOException;
 import java.text.DecimalFormat;
 
 public class process {
+
+    public static String imageName;
 
     public static class Details {
         public Details(String latime, String inaltime, String dimensiune) {
@@ -62,17 +64,19 @@ public class process {
         parentPane.toFront();
         homePane.setVisible(false);
         helpPane.setVisible(false);
+        return;
     }
 
-    public void loadImage(Pane parentPane, ImageView imgOrg, ChoiceBox chooseBox, ProgressIndicator progressInd, Button processButton, TableView table, TableView tableModif) {
+    public static void loadImage(Pane parentPane, ImageView imgOrg, ChoiceBox chooseBox, ProgressIndicator progressInd, Button processButton, TableView table, TableView tableModif) {
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Selecteaza imaginea");
         fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("BMP files", "*.bmp"));
         File selectedImage = fileChooser.showOpenDialog(parentPane.getScene().getWindow());
         String originalPath = selectedImage.getPath();
-        String imageName = selectedImage.getName();
+        imageName = selectedImage.getName();
         try {
             imgOrg.setImage(new Image( new FileInputStream(originalPath)));
+            imgOrg.setVisible(true);
             if(chooseBox.getItems().isEmpty()) {
                 chooseBox.getItems().addAll("Vertical", "Horizontal", "Hor&Vert");
             }
@@ -83,10 +87,11 @@ public class process {
         } catch (Exception ex) {
             ex.printStackTrace();
         }
+        return;
     }
 
 
-    public void getImageDetails(TableView table, TableView tableModif, Image image, String path, boolean original) {
+    public static void getImageDetails(TableView table, TableView tableModif, Image image, String path, boolean original) {
         String width = String.valueOf(image.getWidth());
         String height = String.valueOf(image.getHeight());
         double size = new Double(new File(path).length()) / 1024 / 1024;
@@ -97,27 +102,26 @@ public class process {
         ObservableList<Details> details = FXCollections.observableArrayList();
         details.add(details1);
 
-//        if(original) {
-//            table.getColumns();
+        if(original) {
 //            width.setCellValueFactory(new PropertyValueFactory<Details, String>("latime"));
 //            height.setCellValueFactory(new PropertyValueFactory<Details, String>("inaltime"));
 //            size.setCellValueFactory(new PropertyValueFactory<Details, String>("dimensiune"));
-//            table.setItems(details);
-//        } else {
+            table.setItems(details);
+        } else {
 //            widthModif.setCellValueFactory(new PropertyValueFactory<Details, String>("latime"));
 //            heightModif.setCellValueFactory(new PropertyValueFactory<Details, String>("inaltime"));
 //            sizeModif.setCellValueFactory(new PropertyValueFactory<Details, String>("dimensiune"));
-//            tableModif.setItems(details);
-//        }
+            tableModif.setItems(details);
+        }
         return;
     }
 
-    public String getOrientation(ChoiceBox chooseBox) {
+    public static String getOrientation(ChoiceBox chooseBox) {
         String output =  chooseBox.getSelectionModel().getSelectedItem().toString().toLowerCase();
         return output;
     }
 
-    public void saveToFile(Pane parentPane, ImageView img, String imageName, TableView table,  TableView tableModif) {
+    public static void saveToFile(Pane parentPane, ImageView img, TableView table,  TableView tableModif) {
         DirectoryChooser directoryChooser = new DirectoryChooser();
         directoryChooser.setTitle("Alegeti directorul");
         File selectedDirectory = directoryChooser.showDialog(parentPane.getScene().getWindow());
@@ -130,9 +134,10 @@ public class process {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+        return;
     }
 
-    public void processImage(Pane parentPane, ImageView imgOrg, ImageView img,ProgressIndicator progressInd, String imageName, TableView table, TableView tableModif, ChoiceBox chooseBox) {
+    public static void processImage(Pane parentPane, ImageView imgOrg, ImageView img,ProgressIndicator progressInd, TableView table, TableView tableModif, ChoiceBox chooseBox) {
         String orientation = getOrientation(chooseBox);
         long startTime = System.nanoTime();
         if(orientation.equals("vertical")){
@@ -151,13 +156,13 @@ public class process {
 
         long elapsed = (System.nanoTime() - startTime); //timpul in nanosecunde
         System.out.println(elapsed);
-        saveToFile(parentPane, img, imageName, table, tableModif);
+        saveToFile(parentPane, img, table, tableModif);
         return;
     }
 
-    public void changePhoto(ToggleButton toggle, Label imgOrgLabel, Label imgLabel, ImageView imgOrg, ImageView img, TableView table, TableView tableModif, Checkbox checkInfo ){
+    public static void changePhoto(ToggleButton toggle, Label imgOrgLabel, Label imgLabel, ImageView imgOrg, ImageView img, TableView table, TableView tableModif, CheckBox checkInfo ){
 
-        boolean isChecked = checkInfo.getState();
+        boolean isChecked = checkInfo.isSelected();
         if(toggle.selectedProperty().getValue()) {
             imgOrgLabel.setVisible(false);
             imgOrg.setVisible(false);
@@ -185,10 +190,11 @@ public class process {
                 table.setVisible(false);
             }
         }
+        return;
     }
 
-    public void showInfo(Checkbox checkInfo, ToggleButton toggle, TableView table, TableView tableModif, TextField info) {
-        boolean value = checkInfo.getState();
+    public static void showInfo(CheckBox checkInfo, ToggleButton toggle, TableView table, TableView tableModif, TextField info) {
+        boolean value = checkInfo.isSelected();
         if(value){
             info.setVisible(true);
             if(toggle.selectedProperty().getValue()) {

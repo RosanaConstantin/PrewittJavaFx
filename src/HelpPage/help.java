@@ -7,6 +7,6 @@ public class help {
         helpPane.setVisible(true);
         helpPane.toFront();
         homePane.setVisible(false);
-
+        return;
     }
 }
