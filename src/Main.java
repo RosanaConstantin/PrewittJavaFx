@@ -82,15 +82,18 @@ public class Main extends Application {
         textArea.setLayoutY(11.0);
         textArea.prefHeight(590.0);
         textArea.prefWidth(1054.0);
+        textArea.setPrefColumnCount(70);
+        textArea.setPrefRowCount(27);
         textArea.setWrapText(true);
         textArea.setFont(javafx.scene.text.Font.font("Arial Italic"));
         textArea.setFont(javafx.scene.text.Font.font(16.0));
 
 
         ImageView imageView = new ImageView("./utils/images/seeMore.png");
-        imageView.setId("homeIcon");
-        imageView.setFitHeight(105);
-        imageView.setFitWidth(172);
+        imageView.setFitHeight(80);
+        imageView.setFitWidth(80);
+        imageView.setLayoutX(140.0);
+        imageView.setLayoutY(490.0);
 
         Hyperlink hyperlink = new Hyperlink();
         hyperlink.setText("https://en.wikipedia.org/wiki/Prewitt_operator");
@@ -134,6 +137,8 @@ public class Main extends Application {
         textAreaHelp.setLayoutY(11.0);
         textAreaHelp.prefWidth(1054.0);
         textAreaHelp.prefHeight(590.0);
+        textAreaHelp.setPrefColumnCount(65);
+        textAreaHelp.setPrefRowCount(25);
 
         textAreaHelp.setWrapText(true);
         textAreaHelp.setFont(javafx.scene.text.Font.font("Arial Narrow Italic"));
@@ -179,7 +184,7 @@ public class Main extends Application {
         cb.setLayoutX(921.0);
         cb.setLayoutY(99.0);
         cb.prefWidth(150.0);
-
+        cb.setAccessibleText("Orientare");
 
         //Button load
         Button loadButton = new Button();
@@ -188,6 +193,7 @@ public class Main extends Application {
         loadButton.setLayoutY(99.0);
         loadButton.prefHeight(27.0);
         loadButton.prefWidth(172.0);
+        loadButton.setStyle("-fx-base: #c6538c;");
 
         //Button process
         Button processButton = new Button();
@@ -196,6 +202,7 @@ public class Main extends Application {
         processButton.setLayoutY(160.0);
         processButton.prefHeight(31.0);
         processButton.prefWidth(181.0);
+        processButton.setStyle("-fx-base: #c6538c;");
 
         //DatePicker
         DatePicker dateHolder = new DatePicker();
@@ -272,7 +279,7 @@ public class Main extends Application {
         //Label img
         Label labelImg = new Label();
         labelImg.setText("Imaginea procesata");
-        labelImg.setLayoutX(78.0);
+        labelImg.setLayoutX(121.0);
         labelImg.setLayoutY(635.0);
         labelImg.prefHeight(21.0);
         labelImg.prefWidth(142.0);
@@ -302,16 +309,16 @@ public class Main extends Application {
         table.setFixedCellSize(30.0);
         table.setLayoutX(677.0);
         table.setLayoutY(515.0);
-        table.prefHeight(151.0);
-        table.prefWidth(430.0);
+        table.setPrefHeight(150.0);
         table.setVisible(false);
 
         TableColumn width = new TableColumn("Latime");
-        width.setPrefWidth(75.0);
+        width.setPrefWidth(150.0);
         TableColumn height = new TableColumn("Inaltime");
-        height.setPrefWidth(75.0);
+        height.setPrefWidth(150.0);
         TableColumn size = new TableColumn("Dimensiune");
-        size.setPrefWidth(75.0);
+        size.setPrefWidth(150.0);
+
         table.getColumns().addAll(width, height, size);
 
         TableView tableModif = new TableView();
@@ -319,16 +326,15 @@ public class Main extends Application {
         tableModif.setFixedCellSize(30.0);
         tableModif.setLayoutX(677.0);
         tableModif.setLayoutY(515.0);
-        tableModif.prefHeight(151.0);
-        tableModif.prefWidth(430.0);
+        tableModif.setPrefHeight(150.0);
         tableModif.setVisible(false);
 
         TableColumn widthModif = new TableColumn("Latime");
-        widthModif.setPrefWidth(75.0);
+        widthModif.setPrefWidth(150.0);
         TableColumn heightModif = new TableColumn("Inaltime");
-        heightModif.setPrefWidth(75.0);
+        heightModif.setPrefWidth(150.0);
         TableColumn sizeModif = new TableColumn("Dimensiune");
-        sizeModif.setPrefWidth(75.0);
+        sizeModif.setPrefWidth(150.0);
         tableModif.getColumns().addAll(widthModif, heightModif, sizeModif);
 
         //Actions buttons
