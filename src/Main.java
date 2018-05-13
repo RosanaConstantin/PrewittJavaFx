@@ -63,7 +63,7 @@ public class Main extends Application {
         menu.getTabs().addAll(home, processing, help);
 
         Pane homePane = new Pane();
-        homePane.setPrefSize(1100, 600);
+       // homePane.setPrefSize(1100, 600);
         homePane.setLayoutX(50.0);
         homePane.setLayoutY(70.0);
         homePane.setVisible(false);
@@ -85,6 +85,7 @@ public class Main extends Application {
         textArea.setWrapText(true);
         textArea.setFont(javafx.scene.text.Font.font("Arial Italic"));
         textArea.setFont(javafx.scene.text.Font.font(16.0));
+
 
         ImageView imageView = new ImageView("./utils/images/seeMore.png");
         imageView.setId("homeIcon");
@@ -115,8 +116,8 @@ public class Main extends Application {
         homePane.getChildren().addAll(textArea, hyperlink, imageView, label);
 
         Pane helpPane = new Pane();
-        helpPane.setId("helpPane");
-        helpPane.setPrefSize(1100, 600);
+        helpPane.prefHeight( 600);
+        helpPane.prefWidth( 1100);
         helpPane.setVisible(false);
         helpPane.setLayoutX(50.0);
         helpPane.setLayoutY(70.0);
@@ -133,6 +134,7 @@ public class Main extends Application {
         textAreaHelp.setLayoutY(11.0);
         textAreaHelp.prefWidth(1054.0);
         textAreaHelp.prefHeight(590.0);
+
         textAreaHelp.setWrapText(true);
         textAreaHelp.setFont(javafx.scene.text.Font.font("Arial Narrow Italic"));
         textAreaHelp.setFont(javafx.scene.text.Font.font(17.0));
@@ -149,10 +151,10 @@ public class Main extends Application {
 
         Hyperlink hyperlinkGit = new Hyperlink();
         hyperlinkGit.setText("https://github.com/RosanaConstantin/PrewittJavaFx.git");
-        hyperlink.setLayoutX(540.0);
-        hyperlink.setLayoutY(680.0);
-        hyperlink.prefHeight(29.0);
-        hyperlink.prefWidth(430.0);
+        hyperlinkGit.setLayoutX(540.0);
+        hyperlinkGit.setLayoutY(680.0);
+        hyperlinkGit.setPrefHeight(29.0);
+        hyperlinkGit.setPrefWidth(430.0);
 
 
         hyperlinkGit.setOnAction(e -> {
@@ -168,7 +170,7 @@ public class Main extends Application {
         labelGit.setText("Gaseste proiectul pe Git, la adresa:");
         labelGit.setLayoutX(291.0);
         labelGit.setLayoutY(684.0);
-     
+
         //ChoiceBox
         ChoiceBox cb = new ChoiceBox(FXCollections.observableArrayList(
                 "Vertical", "Horizontal", "Vert&Horiz")
@@ -374,7 +376,8 @@ public class Main extends Application {
                 ProcessPage.process.processInitialize(parentPane, homePane, helpPane);
         });
 
-        parentPane.getChildren().addAll(menu, table, tableModif, labelGit, hyperlinkGit, cb, dateHolder, toggleButton, loadButton, processButton, typeLabel, checkInfo, img, imgOrg, progressInd, textInfo, labelImg, labelImgOrg);
+
+        parentPane.getChildren().addAll(homePane, helpPane, menu, table, tableModif, labelGit, hyperlinkGit, cb, dateHolder, toggleButton, loadButton, processButton, typeLabel, checkInfo, img, imgOrg, progressInd, textInfo, labelImg, labelImgOrg);
         //Creare scena
 
         Scene scene = new Scene(parentPane,1200, 740);

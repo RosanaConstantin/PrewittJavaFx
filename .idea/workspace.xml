@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62ad208b-d9ed-4573-9c7d-decf145ce6f3" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../prewittGUI/out/production/prewittGUI/Main.class" afterPath="$PROJECT_DIR$/../prewittGUI/out/production/prewittGUI/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../prewittGUI/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../prewittGUI/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../prewittGUI/src/HelpPage/help.java" afterPath="$PROJECT_DIR$/../prewittGUI/src/HelpPage/help.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../prewittGUI/src/HomePage/home.java" afterPath="$PROJECT_DIR$/../prewittGUI/src/HomePage/home.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../prewittGUI/src/Initialize.java" afterPath="$PROJECT_DIR$/../prewittGUI/src/Initialize.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../prewittGUI/src/Main.java" afterPath="$PROJECT_DIR$/../prewittGUI/src/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../prewittGUI/src/ProcessPage/process.java" afterPath="$PROJECT_DIR$/../prewittGUI/src/ProcessPage/process.java" />
     </list>
@@ -23,8 +21,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../prewittGUI/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="165" column="38" lean-forward="false" selection-start-line="165" selection-start-column="38" selection-end-line="165" selection-end-column="38" />
+            <state relative-caret-position="84">
+              <caret line="118" column="32" lean-forward="false" selection-start-line="118" selection-start-column="29" selection-end-line="118" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#647#648#0" expanded="true" />
@@ -37,8 +35,8 @@
       <file leaf-file-name="process.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../prewittGUI/src/ProcessPage/process.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="109" column="16" lean-forward="true" selection-start-line="109" selection-start-column="16" selection-end-line="109" selection-end-column="16" />
+            <state relative-caret-position="164">
+              <caret line="157" column="17" lean-forward="false" selection-start-line="157" selection-start-column="8" selection-end-line="157" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="class#Details#0;class#process#0" expanded="false" />
@@ -60,8 +58,8 @@
       <file leaf-file-name="home.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../prewittGUI/src/HomePage/home.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+            <state relative-caret-position="126">
+              <caret line="6" column="46" lean-forward="false" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -88,12 +86,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>tableV</find>
-      <find>choose</find>
-      <find>imageN</find>
-      <find>image</find>
-      <find>button</find>
-      <find>process</find>
       <find>width</find>
       <find>ch</find>
       <find>awt.</find>
@@ -112,12 +104,18 @@
       <find>sc,</find>
       <find>tab</find>
       <find>tab</find>
-      <find>homePane</find>
       <find>img</find>
       <find>imgO</find>
       <find>check</find>
-      <find>oad</find>
       <find>//tab</find>
+      <find>hyperlin</find>
+      <find>home</find>
+      <find>homep</find>
+      <find>homePane</find>
+      <find>hel</find>
+      <find>oad</find>
+      <find>system.ou</find>
+      <find>textAre</find>
     </findStrings>
     <replaceStrings>
       <replace>labelImg</replace>
@@ -550,7 +548,14 @@
       <option name="project" value="LOCAL" />
       <updated>1526140248768</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added dimensions on elements">
+      <created>1526174741827</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1526174741827</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -572,6 +577,8 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23684211" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -581,9 +588,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -623,7 +628,8 @@
     <MESSAGE value="added homePage without styles&#10;added prewitt operator functions" />
     <MESSAGE value="added helpPage without styles" />
     <MESSAGE value="added elements" />
-    <option name="LAST_COMMIT_MESSAGE" value="added elements" />
+    <MESSAGE value="added dimensions on elements" />
+    <option name="LAST_COMMIT_MESSAGE" value="added dimensions on elements" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -642,25 +648,25 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../prewittGUI/src/Main.java</url>
-          <line>333</line>
+          <line>335</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../prewittGUI/src/Main.java</url>
-          <line>158</line>
+          <line>160</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../prewittGUI/src/Main.java</url>
-          <line>150</line>
+          <line>152</line>
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../prewittGUI/src/Main.java</url>
-          <line>323</line>
+          <line>325</line>
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
@@ -733,14 +739,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../prewittGUI/src/ProcessPage/process.java">
+    <entry file="file://$PROJECT_DIR$/../prewittGUI/src/HomePage/home.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="109" column="16" lean-forward="true" selection-start-line="109" selection-start-column="16" selection-end-line="109" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="class#Details#0;class#process#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="126">
+          <caret line="6" column="46" lean-forward="false" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -752,18 +755,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../prewittGUI/src/HomePage/home.java">
+    <entry file="file://$PROJECT_DIR$/../prewittGUI/src/ProcessPage/process.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding />
+        <state relative-caret-position="164">
+          <caret line="157" column="17" lean-forward="false" selection-start-line="157" selection-start-column="8" selection-end-line="157" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#Details#0;class#process#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../prewittGUI/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="165" column="38" lean-forward="false" selection-start-line="165" selection-start-column="38" selection-end-line="165" selection-end-column="38" />
+        <state relative-caret-position="84">
+          <caret line="118" column="32" lean-forward="false" selection-start-line="118" selection-start-column="29" selection-end-line="118" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#647#648#0" expanded="true" />

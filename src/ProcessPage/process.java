@@ -103,14 +103,14 @@ public class process {
         details.add(details1);
 
         if(original) {
-//            width.setCellValueFactory(new PropertyValueFactory<Details, String>("latime"));
-//            height.setCellValueFactory(new PropertyValueFactory<Details, String>("inaltime"));
-//            size.setCellValueFactory(new PropertyValueFactory<Details, String>("dimensiune"));
+            ((TableColumn) table.getColumns().get(0)).setCellValueFactory(new PropertyValueFactory<Details, String>("latime"));
+            ((TableColumn) table.getColumns().get(1)).setCellValueFactory(new PropertyValueFactory<Details, String>("inaltime"));
+            ((TableColumn) table.getColumns().get(2)).setCellValueFactory(new PropertyValueFactory<Details, String>("dimensiune"));
             table.setItems(details);
         } else {
-//            widthModif.setCellValueFactory(new PropertyValueFactory<Details, String>("latime"));
-//            heightModif.setCellValueFactory(new PropertyValueFactory<Details, String>("inaltime"));
-//            sizeModif.setCellValueFactory(new PropertyValueFactory<Details, String>("dimensiune"));
+            ((TableColumn) tableModif.getColumns().get(0)).setCellValueFactory(new PropertyValueFactory<Details, String>("latime"));
+            ((TableColumn) tableModif.getColumns().get(1)).setCellValueFactory(new PropertyValueFactory<Details, String>("inaltime"));
+            ((TableColumn) tableModif.getColumns().get(2)).setCellValueFactory(new PropertyValueFactory<Details, String>("dimensiune"));
             tableModif.setItems(details);
         }
         return;
